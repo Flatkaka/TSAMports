@@ -1,0 +1,48 @@
+PROJECT 2, TSAM
+------------------------------------------------------------------
+
+This is our code solution to project 2, scanner.cpp, port2.cpp amd
+port3.cpp
+
+------------------------------------------------------------------
+How to run the code.
+------------------------------------------------------------------
+
+To comepile the scanner.cpp, part2.cpp and part3.cpp write "make" into the 
+commandline
+
+        make
+
+To run the scanner write following command. Scanner takes in 3 attribute
+the Ip address you want to scan and then the next 2 attriputes are 
+the ports where you want to scan, The lower port should be the first one.
+For this project lower port should be 4000 and the higer on 4100.
+
+        ./scanner <dest_IP_address> <lowert_portnr> <higer_portnr>
+
+Then in to run part2 you need to write the following command.
+where it takes in 5 attriputes. First destIP address that the server is running on 
+then the source ip address you are sending from. 
+Then there you have to enter the three portnumbers that the scanner showed that are open
+do not include the port 4042 that is for part3. Finally the port 
+numbers have to be increasing order.
+
+        sudo ./part2 <dest_IP_address> <sorce_IP_address> <portnr1> <portnr2> <portnr3>
+
+To run part3 you need to write the following command.
+where it takes in 5 attriputes. First destIP address that the server is running on 
+then the source ip address you are sending from. Then the three ports, first the
+orcale port, (wich is allways 4042). then the twho secret port that the part2
+said were the secret ports. 
+You should enter first the lower secert port number then the higer.
+
+        sudo ./part3 <dest_IP_address> <soruce_IP_address> <oracle_port> <port_low> <port_hig>
+
+
+------------------------------------------------------------------
+Author:
+------------------------------------------------------------------
+
+Hilmar Pall Stefansson.
+and
+Kristjan Ari Tomasson
